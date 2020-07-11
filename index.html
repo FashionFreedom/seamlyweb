@@ -602,7 +602,8 @@
                                 </li>
                             </ul> -->
                             <div class="button-wrapper">
-                                <a class="btn-solid-reg page-scroll" href="https://bintray.com/fashionfreedom/Seamly2D/download_file?file_path=seamly2d.zip">Download</a>
+                                <!-- <a class="btn-solid-reg page-scroll" href="https://bintray.com/fashionfreedom/Seamly2D/download_file?file_path=seamly2d.zip">Download</a>-->
+                                <button onclick="openpopup('windows')">Download</button>
                             </div>
                         </div>
                     </div> 
@@ -633,7 +634,8 @@
                                 </li>
                             </ul> -->
                             <div class="button-wrapper">
-                                <a class="btn-solid-reg page-scroll" href="https://bintray.com/fashionfreedom/Seamly2D/download_file?file_path=seamly2d-osx.tar.gz">Download</a>
+                                <!-- <a class="btn-solid-reg page-scroll" href="https://bintray.com/fashionfreedom/Seamly2D/download_file?file_path=seamly2d-osx.tar.gz">Download</a> -->
+                                <button onclick="openpopup('mac')">Download</button>
                             </div>
                         </div>
                     </div> 
@@ -667,7 +669,8 @@
                                 </li>
                             </ul> -->
                             <div class="button-wrapper">
-                                <a class="btn-solid-reg page-scroll" href="https://launchpad.net/~susan-spencer/+archive/ubuntu/seamly2d">Download</a>
+                                <!-- <a class="btn-solid-reg page-scroll" href="https://launchpad.net/~susan-spencer/+archive/ubuntu/seamly2d">Download</a> -->
+                                <button onclick="openpopup('linux')">Download</button>
                             </div>
                         </div>
                     </div> 
@@ -891,10 +894,46 @@
             </div> 
         </div> 
     </div>  
-    
-    
-    	
-    
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Enter email address to subscribe and download</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <!-- Begin Mailchimp Signup Form -->
+                <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+                <style type="text/css">
+	            #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}	
+                </style>
+                <div id="mc_embed_signup">
+                    <form action="https://valentina-project.us16.list-manage.com/subscribe/post?u=e2d538dec55df318e85d04e22&amp;id=6d1bcd0782" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                    <div id="mc_embed_signup_scroll">
+	                <input type="email" value="" name="EMAIL" class="email form-control-input form-control" id="mce-EMAIL" placeholder="email address" required>
+                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_e2d538dec55df318e85d04e22_6d1bcd0782" tabindex="-1" value=""></div>
+                    <br><br>
+                    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button btn btn-primary" style="float: right;"></div>
+                </div>
+                </form>
+                </div>
+            </div>
+            <!-- <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    <div style="display: none;"> 
+      <button id="popupmodal" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"></button>
+      <a id="windowsoszip" href="https://bintray.com/fashionfreedom/Seamly2D/download_file?file_path=seamly2d.zip" download></a>
+      <a id="macoszip" href="https://bintray.com/fashionfreedom/Seamly2D/download_file?file_path=seamly2d-osx.tar.gz" download></a>
+      <a id="linuxos" href="https://launchpad.net/~susan-spencer/+archive/ubuntu/seamly2d"></a>
+    </div>
+
     <script src="js/jquery.min.js"></script> 
     <script src="js/popper.min.js"></script> 
     <script src="js/bootstrap.min.js"></script> 
@@ -903,5 +942,38 @@
     <script src="js/jquery.magnific-popup.js"></script> 
     <script src="js/validator.min.js"></script> 
     <script src="js/scripts.js"></script> 
+    <script>        
+        var currentos = '';
+        var openpopup = function(os)
+        {
+            currentos = os;
+            $('#popupmodal').trigger('click');
+        }
+
+    $('#mc-embedded-subscribe').on('click',function(e){
+        var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+        if (reg.test($('#mce-EMAIL').val()) == false) 
+        {
+            alert('Invalid Email Address');
+            return false;
+        }
+        else{
+            if(currentos == 'windows')
+            {
+            $('#windowsoszip')[0].click();
+            }
+            else if(currentos == 'mac')
+            {
+            $('#macoszip')[0].click();
+            }
+            else if(currentos == 'linux')
+            {
+            $('#linuxos')[0].click()
+            }
+            currentos = '';
+        }
+        $('#popupmodal').trigger('click');
+        });
+    </script>
 </body>
 </html>
