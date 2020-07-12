@@ -1045,16 +1045,25 @@
         else{
             if(currentos == 'windows')
             {
-            $('#windowsoszip')[0].click();
+            setTimeout(function () {                
+                $('#windowsoszip')[0].click();
+            }, 3000);                    
             }
             else if(currentos == 'mac')
             {
-            $('#macoszip1')[0].click();
-            $('#macoszip2')[0].click();
+            setTimeout(function () {                
+                $('#macoszip1')[0].click();
+            }, 3000);
+            setTimeout(function () {                
+                $('#macoszip2')[0].click();
+            }, 6000);
             }
             else if(currentos == 'linux')
             {
-            $('#linuxos')[0].click()
+            setTimeout(function () {                
+                $('#linuxos')[0].click()
+            }, 3000);
+            
             }
             currentos = '';
         }
