@@ -988,9 +988,10 @@
       </div>
     <div style="display: none;"> 
       <button id="popupmodal" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"></button>
-      <a id="windowsoszip" href="https://bintray.com/fashionfreedom/Seamly2D/download_file?file_path=seamly2d.zip" download></a>
-      <a id="macoszip" href="https://bintray.com/fashionfreedom/Seamly2D/download_file?file_path=seamly2d-osx.tar.gz" download></a>
-      <a id="linuxos" href="https://launchpad.net/~susan-spencer/+archive/ubuntu/seamly2d"></a>
+      <a id="windowsoszip" href="" download></a>
+      <a id="macoszip1" href="" download></a>
+      <a id="macoszip2" href="" download></a>
+      <a id="linuxos" href=""></a>
     </div>
 
     <script src="js/jquery.min.js"></script> 
@@ -1001,7 +1002,32 @@
     <script src="js/jquery.magnific-popup.js"></script> 
     <script src="js/validator.min.js"></script> 
     <script src="js/scripts.js"></script> 
-    <script>        
+    <script>   
+
+    $(document).ready(
+        function(){
+            $.get('https://api.github.com/repos/fashionfreedom/seamly2d/releases/latest',function(temp1){temp1.assets.forEach(function(e){
+                
+                if(e.name == 'seamly2d-installer.exe')
+                {
+                $("#windowsoszip").attr("href", e.browser_download_url)
+                }
+                else if(e.name == 'Seamly2D.dmg')
+                {
+                $("#macoszip1").attr("href", e.browser_download_url)
+                }
+                else if(e.name == 'SeamlyME.dmg')
+                {
+                $("#macoszip2").attr("href", e.browser_download_url)
+                }
+                else if(e.name == 'Seamly2D.AppImage')
+                {
+                $("#linuxos").attr("href", e.browser_download_url)
+                }
+                
+                });},'JSON');
+        }
+    )
         var currentos = '';
         var openpopup = function(os)
         {
@@ -1023,7 +1049,8 @@
             }
             else if(currentos == 'mac')
             {
-            $('#macoszip')[0].click();
+            $('#macoszip1')[0].click();
+            $('#macoszip2')[0].click();
             }
             else if(currentos == 'linux')
             {
