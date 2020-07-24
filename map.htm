@@ -16,10 +16,10 @@
      </style>
   </head>
   <body>
-    <div id="map"></div>
+    <div id="map" style="height: 35vh; padding: 2rem;"></div>
     <script>
       var map;
-      
+
       function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
           zoom: 2,
@@ -29,7 +29,7 @@
           zoomControl: true,
           mapTypeControl: true,
           streetViewControl: false
-      
+
         });
         var infowindow = new google.maps.InfoWindow();
         var bounds = new google.maps.LatLngBounds();
@@ -45,10 +45,10 @@
       });
 
       map.data.loadGeoJson('prettydata.json');
-      
+
       }
     </script>
-    
+
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDeF7tVYEVIhnafKGGVAztPJiRjzgQtffM&callback=initMap">
     </script>
