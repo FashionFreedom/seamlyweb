@@ -111,7 +111,12 @@ ol ol,
 ul ul,
 ol ul,
 ul ol {
-  margin-bottom: 0;
+  padding: 0em 0em 0em 0em;
+}
+
+li {
+  background-color: #fefefe;
+  padding: 1em 0 1em 1em;
 }
 
 dt {
@@ -613,8 +618,7 @@ pre code {
 .col-xl-auto {
   position: relative;
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
+  left: 0em;
 }
 
 .col {
