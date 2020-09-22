@@ -26,6 +26,7 @@ Table Of Contents:
 17. Extra Pages
 18. Sign Up and Log In Pages
 19. Media Queries
+20. Map
 ******************************************/
 
 /*****************************************
@@ -2148,5 +2149,23 @@ a:hover.back-to-top {
 		margin-left: 1.75rem;
 	}
 	/* end of extra pages */
+
+/*****************************/
+/*     20. Map     */
+/*****************************/	
+.map-responsive{
+      overflow:hidden;
+      padding-bottom:56.25%;
+      position:relative;
+      height:0;
+}
+.map-responsive iframe{
+      left:0;
+      top:0;
+      height:100%;
+      width:100%;
+      position:absolute;
+}
+
 }
 /* end of min-width width 1200px */
