@@ -112,11 +112,12 @@ ul ul,
 ol ul,
 ul ol {
   padding: 0em 0em 0em 0em;
+  list-style-type: '\2713';
 }
 
 li {
-  background-color: #fefefe;
-  padding: 1em 0 1em 1em;
+  position: relative;
+  vertical-align: center;
 }
 
 dt {
@@ -203,6 +204,13 @@ figure {
 img {
   vertical-align: middle;
   border-style: none;
+}
+
+logo-img {
+  vertical-align: middle;
+  border-style: none;
+  height: 15vh;
+  max-width: 100%;
 }
 
 svg {
@@ -484,6 +492,7 @@ mark,
 .img-fluid {
   max-width: 100%;
   height: auto;
+  margin-top: -em:
 }
 
 .img-thumbnail {
@@ -588,6 +597,7 @@ pre code {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+  padding-top: 1rem;
 }
 
 .row {
@@ -4067,10 +4077,12 @@ input[type="button"].btn-block {
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
+  color:#fff;
 }
 
 .nav-link:hover, .nav-link:focus {
   text-decoration: none;
+  color:#0f0;
 }
 
 .nav-link.disabled {

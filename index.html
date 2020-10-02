@@ -4,199 +4,187 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-
     <meta name="description" content="Seamly2D">
     <meta name="author" content="Inovatik">
 
-
-	<meta property="og:site_name" content="" />
-	<meta property="og:site" content="" />
-	<meta property="og:title" content=""/>
-	<meta property="og:description" content="" />
-	<meta property="og:image" content="" />
-	<meta property="og:url" content="" />
-	<meta property="og:type" content="article" />
-
+  	<meta property="og:site_name" content="" />
+  	<meta property="og:site" content="" />
+  	<meta property="og:title" content=""/>
+  	<meta property="og:description" content="" />
+  	<meta property="og:image" content="" />
+  	<meta property="og:url" content="" />
+  	<meta property="og:type" content="article" />
 
     <title>Seamly2D</title>
 
+    <style>
+       /* Set the size of the div element that contains the map */
+      #map {
+        height: 100%;  /* The height is 100% height of the div */
+        width: 100%;  /* The width is 100% width of the web page */
+       }
+    </style>
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap&subset=latin-ext" rel="stylesheet">
     <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/fontawesome-all.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="css/swiper.css" rel="stylesheet">
-	<link href="css/magnific-popup.css" rel="stylesheet">
-	<link href="css/styles.css" rel="stylesheet">
-
-
+	  <link href="css/magnific-popup.css" rel="stylesheet">
+	  <link href="css/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap" rel="stylesheet">
     <link rel="icon" href="images/favicon.png">
+
+    <!--Mailchip integration-->
+    <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/e2d538dec55df318e85d04e22/25668282053ac0173264e6583.js");</script>
+
 </head>
+
 <body data-spy="scroll" data-target=".fixed-top">
 
-
-	<div class="spinner-wrapper">
-        <div class="spinner">
-            <div class="bounce1"></div>
-            <div class="bounce2"></div>
-            <div class="bounce3"></div>
-        </div>
-    </div>
-
-
-
-
-    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top" style="background:white;">
-        <div class="container">
-
-            <a class="navbar-brand logo-image" href="index.html"><img src="images/logo.png" alt="alternative"></a>
-
-
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-awesome fas fa-bars"></span>
-                <span class="navbar-toggler-awesome fas fa-times"></span>
-            </button>
-
-
-            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-                <ul class="navbar-nav ml-auto">
-                    <!-- <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#header">HOME <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#features">FEATURES</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#details">DETAILS</a>
-                    </li>
-
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle page-scroll" href="#video" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">VIDEO</a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="article-details.html"><span class="item-text">ARTICLE DETAILS</span></a>
-                            <div class="dropdown-items-divide-hr"></div>
-                            <a class="dropdown-item" href="terms-conditions.html"><span class="item-text">TERMS CONDITIONS</span></a>
-                            <div class="dropdown-items-divide-hr"></div>
-                            <a class="dropdown-item" href="privacy-policy.html"><span class="item-text">PRIVACY POLICY</span></a>
-                        </div>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#pricing">PRICING</a>
-                    </li> -->
-                </ul>
-                <span class="nav-item">
-                    <a class="btn-outline-sm" target="_blank" href="https://www.paypal.com/donate/?token=3K8tHS3v0sowSkaKJpr0A3VhFde0L5vxhqjAgF7NGbxunah4K23wGty5-7XeIetMhku-Vm&country.x=US&locale.x=US">Donate</a>
-                </span>
-            </div>
-        </div>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <nav class="navbar navbar-light bg-light" style="padding: 0rem 0rem 0rem 0rem;">
+      <a class="navbar-brand" style="text-decoration:none; padding: 0rem 0rem 0rem 0rem;" href="#">
+        <img src="./images/logo.svg" max-width="100%" height="50vh" class="d-inline-block align-center" alt="">
+      </a>
     </nav>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+      <div class="navbar-nav navbar-light">
+        <a class="nav-item nav-link active" href="#">Home<span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link" href="#Details">What We Do</a>
+        <a class="nav-item nav-link" href="#Benefits">Benefits</a>
+        <a class="nav-item nav-link" href="#Testimonials">Testimonials</a>
+        <a class="nav-item nav-link" href="#Downloads">Download</a>
+        <a class="nav-item nav-link" href="#Contact">Contact</a>
+      </div>
+    </div>
+    <nav class="navbar navbar-light bg-light">
+      <form class="form-inline">
+        <button class="btn btn-outline-success" type="button">Log In</button>
+        <button class="btn btn-outline-secondary" type="button">Sign Up</button>
+      </form>
+    </nav>
+  </nav>
 
 
+  <header id="header" class="header" style="background-color: #c2dde6;">
+      <div class="header-content">
+          <div class="container-fluid" style="text-align: center;">
 
-
-    <header id="header" class="header">
-        <div class="header-content">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 col-xl-6">
-                        <div class="text-container" style="margin-right: 0em;">
-                            <ul class="list ol li li-space-lg2"
-                                style="list-style: circle inside; color:#000; font-size: 100%; text-align: left;">
-                                <li><i class="fas fa-square"></i> Make patterns that need *absolutely no fitting at all*&nbsp;</li>
-                                <li><i class="fas fa-square"></i> This will revolutionize the business as I see it&nbsp;</li>
-                                <li><i class="fas fa-square"></i> It saves so many hours of work&nbsp;</li>
-                                <li><i class="fas fa-square"></i> You can make adjustments but keep everything bespoke&nbsp;</li>
-                                <li><i class="fas fa-square"></i> It’s no big deal to redraw a few things&nbsp;</li>
-                                <li><i class="fas fa-square"></i> I thank any and every person involved in this program&nbsp;</li>
-                                <li><i class="fas fa-square"></i> I’m thrilled by this project&nbsp;</li>
-                                <li><i class="fas fa-square"></i> It’s like sewing+trigonometry there’s literally nothing better&nbsp;</li>
-                                <li><i class="fas fa-square"></i> It’s better for me in the way I create&nbsp;</li>
-                                <li><i class="fas fa-square"></i> It’s a fantastic tool for the way I create and think&nbsp;</li>
-                                <li><i class="fas fa-square"></i> I’ve been needing it for years&nbsp;</li>
-                                <li><i class="fas fa-square"></i> Truly unique and special, and extremely powerful&nbsp;</li>
-                                <li><i class="fas fa-square"></i> Keep up the great work&nbsp;</li>
-                                <li><i class="fas fa-square"></i> It’s been such a huge time saver for me&nbsp;</li>
-                                <li><i class="fas fa-square"></i> Thanks for creating this beautiful program&nbsp;</li>
-                                <li><i class="fas fa-square"></i> It is a truly amazing effort&nbsp;</li>
-                                <li><i class="fas fa-square"></i> Thank you to the creators of this software&nbsp;</li>
-                            </ul>
+              <div class="container-fluid" id="headerSection1" style="padding: 1rem 2rem 1rem 1rem;" >
+                        <h1><span class="overlay-text" style="font-family: Montserrat, sans-serif; font-size: 6rem; font-weight: bold; color: black;">Seamly</span></h1>
+                        <span class="overlay-text" style="font-family: Nunito Sans, sans-serif; font-size: 2rem; font-weight: bold; color: black; padding: .25rem;">Pattern Design Software</span><br/>
+                        <span class="overlay-text" style="font-family: Nunito Sans, sans-serif; font-size: 1rem; font-weight: bold; color: black; padding: .25rem;">Free and Open Source GPLv3</span>
+                        <div class="img-wrapper" style:"float: center;">
+                            <img class="img-fluid" src="images/seamly-screenshot-jeans.jpg"
+                              style="width: 35%; height: 35%; margin-left: 0em;" alt="Jacket pattern made with Seamly">
                         </div>
-                    </div>
-                    <div class="col-lg-6 col-xl-6" style:"padding-right: 0em;">
-                        <div class="image-container" style:"float: left;">
-                            <div class="img-wrapper" style:"float: left;">
-                                <img class="img-fluid" src="images/header-software-app.png" style="width: 90%; height: 90%;" alt="alternative;">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-    <svg class="header-frame" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 1920 310"><defs><style>.cls-1{fill:#5f4def;}</style></defs><title>header-frame</title><path class="cls-1" d="M0,283.054c22.75,12.98,53.1,15.2,70.635,14.808,92.115-2.077,238.3-79.9,354.895-79.938,59.97-.019,106.17,18.059,141.58,34,47.778,21.511,47.778,21.511,90,38.938,28.418,11.731,85.344,26.169,152.992,17.971,68.127-8.255,115.933-34.963,166.492-67.393,37.467-24.032,148.6-112.008,171.753-127.963,27.951-19.26,87.771-81.155,180.71-89.341,72.016-6.343,105.479,12.388,157.434,35.467,69.73,30.976,168.93,92.28,256.514,89.405,100.992-3.315,140.276-41.7,177-64.9V0.24H0V283.054Z"/></svg>
+              </div>
 
-    <div id="details" class="basic-1">
+              <div class="container-fluid" id="headerSection2">
+                      <div class="img-wrapper" style:"float: center;">
+                        <img class="img-fluid" src="images/happy-people-cropped.jpg"
+                        style="width: 90%; height: 90%; margin-left: 0em;" alt="Tailors and patternmakers love Seamly">
+                      </div>
+              </div>
+
+              <div class="container-fluid" id="headerSection3" style="width:60%">
+
+                  <div class="row">
+                      <div class="col-sm" style="display: flex; justify-content: center; margin-left: 2rem;">
+                          <ul class="list ol li li-space-lg2"
+                              style="list-style: color:#000;
+                              font-family: Nunito Sans, sans-serif;
+                              font-size: 1.5em;
+                              color: black;
+                              text-align: left;">
+                            <li>Create perfectly fitting patterns</li>
+                            <li>Save Time</li>
+                            <li>Save money</li>
+                        </ul>
+                      </div>
+                      <div class="col-sm" style="display: flex; justify-content: center; margin-left: 2rem;">
+                          <ul class="list ol li li-space-lg2"
+                            style="list-style: color:#000;
+                            font-family: Nunito Sans, sans-serif;
+                            font-size: 1.5em;
+                            color: black;
+                            text-align: left;">
+                          <li>Increase creativity</li>
+                          <li>Professional results</li>
+                      </ul>
+                      </div>
+                  </div>
+
+              </div>
+
+          </div>
+      </div>
+  </header>
+
+  <div class="basic-1" id="infoArea">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-8">
-                    <div class="text-container">
-                        <h2>Salient Features</h2>
-                        <ul class="list-unstyled li-space-lg">
-                            <li class="media">
-                                <i class="fas fa-square"></i>
-                                <div class="media-body">Send patterns to any manufacturer</div>
-                            </li>
-                            <li class="media">
-                                <i class="fas fa-square"></i>
-                                <div class="media-body">Plot and print to any size paper</div>
-                            </li>
-                            <li class="media">
-                                <i class="fas fa-square"></i>
-                                <div class="media-body">Create custom fitting design patterns</div>
-                            </li>
-                            <li class="media">
-                                <i class="fas fa-square"></i>
-                                <div class="media-body">Create designs for anyone, without any fittings!Cost cutting</div>
-                            </li>
-                            <li class="media">
-                                <i class="fas fa-square"></i>
-                                <div class="media-body">Change pattern for next season without starting from scratch</div>
-                            </li>
-                            <li class="media">
-                                <i class="fas fa-square"></i>
-                                <div class="media-body">Increase speed to market with purchase-activated business model</div>
-                            </li>
-                            <li class="media">
-                                <i class="fas fa-square"></i>
-                                <div class="media-body">Create ANY pattern including block/master patterns. User has full control</div>
-                            </li>
+
+            <div class="row" id="row1">
+
+                <div class="col-sm-8 col-lg-8 col-xl-8" id="Testimonials">
+
+                    <div class="text-container" >
+
+                        <h2>What Our Users Say</h2>
+
+                        <ul class="list-unstyled" style="font-style: italic;" >
+                          <li><i class="fa fa-scissors" aria-hidden="true"></i>"Make patterns that need *absolutely no fitting at all*"</li>
+                          <li>&emsp;<i class="fa fa-scissors" aria-hidden="true"></i> "This will revolutionize the business as I see it"</li>
+                          <li></i>&emsp;&emsp;<i class="fa fa-scissors" aria-hidden="true"></i>  "It saves so many hours of work"</li>
+                          <li><i class="fa fa-scissors" aria-hidden="true"></i>"You can make adjustments but keep everything bespoke"</li>
+                          <li>&emsp;<i class="fa fa-scissors" aria-hidden="true"></i> "It’s no big deal to redraw a few things"</li>
+                          <li>&emsp;&emsp;<i class="fa fa-scissors" aria-hidden="true"></i>  "I thank any and every person involved in this program"</li>
+                          <li><i class="fa fa-scissors" aria-hidden="true"></i> "I’m thrilled by this project"</li>
+                          <li>&emsp;<i class="fa fa-scissors" aria-hidden="true"></i>  "It’s like sewing+trigonometry there’s literally nothing better"</li>
+                          <li>&emsp; &emsp;<i class="fa fa-scissors" aria-hidden="true"></i> "It’s better for me in the way I create"</li>
+                          <li><i class="fa fa-scissors" aria-hidden="true"></i>"It’s a fantastic tool for the way I create and think"</li>
+                          <li>&emsp;<i class="fa fa-scissors" aria-hidden="true"></i> "I’ve been needing it for years"</li>
+                          <li>&emsp;&emsp;<i class="fa fa-scissors" aria-hidden="true"></i> "Truly unique and special, and extremely powerful"</li>
+                          <li><i class="fa fa-scissors" aria-hidden="true"></i>"Keep up the great work"</li>
+                          <li>&emsp;<i class="fa fa-scissors" aria-hidden="true"></i> "It’s been such a huge time saver for me"</li>
+                          <li>&emsp;&emsp;<i class="fa fa-scissors" aria-hidden="true"></i> "Thanks for creating this beautiful program"/li>
+                          <li><i class="fa fa-scissors" aria-hidden="true"></i>"It is a truly amazing effort"</li>
+                          <li>&emsp;<i class="fa fa-scissors" aria-hidden="true"></i> "Thank you to the creators of this software"</li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="card">
+
+                <div class="col-sm-4 col-lg-4 col-xl-4" id="Benefits">
+                    <div class="card" >
                         <div class="card-body">
-                            <h4>With Seamly</h4>
+                            <h2>Benefits</h2>
                             <div class="divider"></div>
                             <ul class="list-unstyled li-space-lg">
-                                <li class="media">
-                                    <i class="fas fa-check"></i><div class="media-body">Save Time</div>
-                                </li>
-                                <li class="media">
-                                    <i class="fas fa-check"></i><div class="media-body">Save money</div>
-                                </li>
-                                <li class="media">
-                                    <i class="fas fa-check"></i><div class="media-body">Reduce error</div>
-                                </li>
-                                <li class="media">
-                                    <i class="fas fa-check"></i><div class="media-body">Increase creativity</div>
-                                </li>
-                                <li class="media">
-                                    <i class="fas fa-check"></i><div class="media-body">Decrease business risk</div>
-                                </li>
-                                <li class="media">
-                                    <i class="fas fa-check"></i><div class="media-body">Produce professional patterns</div>
-                                </li>
+                              <li class="media"><i class="fas fa-check" style="color: limegreen;"></i>
+                                  <div class="media-body">Send patterns to any manufacturer</div>
+                              </li>
+                              <li class="media"><i class="fas fa-square" class="fas fa-check" style="color: limegreen;"></i>
+                                  <div class="media-body">Plot and print to any size paper</div>
+                              </li>
+                              <li class="media"><i  class="fas fa-check" style="color: limegreen;"></i>
+                                  <div class="media-body">Create custom fitting design patterns</div>
+                              </li>
+                              <li class="media"><i  class="fas fa-check" style="color: limegreen;"></i>
+                                  <div class="media-body">Create designs for anyone, without any fittings!Cost cutting</div>
+                              </li>
+                              <li class="media"><i  class="fas fa-check" style="color: limegreen;"></i>
+                                  <div class="media-body">Change pattern for next season without starting from scratch</div>
+                              </li>
+                              <li class="media"><i  class="fas fa-check" style="color: limegreen;"></i>
+                                  <div class="media-body">Increase speed to market with purchase-activated business model</div>
+                              </li>
+                              <li class="media"><i  class="fas fa-check" style="color: limegreen;"></i>
+                                  <div class="media-body">Create ANY pattern including block/master patterns. User has full control</div>
+                              </li>
                             </ul>
                         </div>
                     </div>
@@ -205,24 +193,12 @@
         </div>
     </div>
 
-    <div id="video" class="basic-2" style="height 75vh; padding: 2rem;">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="above-heading">Use</div>
-                    <h4>Seamly is used and taught throughout the world</h4>
-                </div>
-            </div>
-            <div class="img-wrapper">
-              <iframe src="map.htm"
-                      style="border:none; width:100%; height:100%";
-                      title="Seamly Map">
-              </iframe>
-            </div>
-        </div>
+    <div id="Locate" class="map-responsive" style="text-align: center;">
+        <h4>Seamly is used and taught throughout the world</h4>
+        <iframe src="map.htm" style="border:none; width:100%; height:100%"; title="Seamly Map"></iframe>
     </div>
 
-    <div id="video" class="basic-2">
+    <div id="Donate" class="basic-2">
         <div class="container">
             <div class="row">
                 <div class="col-lg-9">
@@ -235,7 +211,7 @@
         </div>
     </div>
 
-    <div id="download" class="cards-2">
+    <div id="Download" class="cards-2">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -259,8 +235,6 @@
                         </div>
                     </div>
 
-
-
                     <div class="card">
                         <div class="card-body">
                             <div class="card-title">MAC OSX</div>
@@ -272,8 +246,6 @@
                             </div>
                         </div>
                     </div>
-
-
 
                     <div class="card">
                         <div class="card-body">
@@ -287,217 +259,31 @@
                         </div>
                     </div>
 
-
                 </div>
             </div>
         </div>
     </div>
 
+    <!--wavy section-->
+    <svg class="footer-frame" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 1920 79">
+      <defs><style>.cls-2{fill:#337d96;}</style></defs>
+      <title>footer-frame</title>
+      <path class="cls-2" d="M0,72.427C143,12.138,255.5,4.577,328.644,7.943c147.721,6.8,183.881,60.242,320.83,53.737,143-6.793,167.826-68.128,293-60.9,109.095,6.3,115.68,54.364,225.251,57.319,113.58,3.064,138.8-47.711,251.189-41.8,104.012,5.474,109.713,50.4,197.369,46.572,89.549-3.91,124.375-52.563,227.622-50.155A338.646,338.646,0,0,1,1920,23.467V79.75H0V72.427Z" transform="translate(0 -0.188)"/>
+    </svg>
 
-<!--
-
-    <div class="slider-2">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-
-
-                    <div class="slider-container">
-                        <div class="swiper-container text-slider">
-                            <div class="swiper-wrapper">
-
-
-                                <div class="swiper-slide">
-                                    <div class="image-wrapper">
-                                        <img class="img-fluid" src="images/testimonial-1.jpg" alt="alternative">
-                                    </div>
-                                    <div class="text-wrapper">
-                                        <div class="testimonial-text">I started to use Tivo with the free trial about a year ago and never stopped since then. It does all the repeating marketing tasks and allows me to focus on core development activities like new product research and design. I love it and recommend it to everyone.</div>
-                                        <div class="testimonial-author">Jude Thorn - Online Marketer</div>
-                                    </div>
-                                </div>
-
-
-
-                                <div class="swiper-slide">
-                                    <div class="image-wrapper">
-                                        <img class="img-fluid" src="images/testimonial-2.jpg" alt="alternative">
-                                    </div>
-                                    <div class="text-wrapper">
-                                        <div class="testimonial-text">Awesome features for the money. I never thought such a low ammount of money would bring me so many leads per month. Before Tivo I used the services of an agency which cost 10x more and delivered far less. Highly recommended to marketers focused on results.</div>
-                                        <div class="testimonial-author">Roy Smith - Developer</div>
-                                    </div>
-                                </div>
-
-
-
-                                <div class="swiper-slide">
-                                    <div class="image-wrapper">
-                                        <img class="img-fluid" src="images/testimonial-3.jpg" alt="alternative">
-                                    </div>
-                                    <div class="text-wrapper">
-                                        <div class="testimonial-text">Tivo is the best marketing automation app for small and medium sized business. It understands the mindset of young entrepreneurs and provides the necessary data for wise marketing decisions. Just give it a try and you will definitely not regret spending your time.</div>
-                                        <div class="testimonial-author">Marsha Singer - Online Marketer</div>
-                                    </div>
-                                </div>
-
-
-
-                                <div class="swiper-slide">
-                                    <div class="image-wrapper">
-                                        <img class="img-fluid" src="images/testimonial-4.jpg" alt="alternative">
-                                    </div>
-                                    <div class="text-wrapper">
-                                        <div class="testimonial-text">Tivo is one of the greatest marketing automation apps out there. I especially love the Reporting Tools module because it gives me such a great amount of information based on little amounts of input gathered in just few weeks of light weight usage. Recommended!</div>
-                                        <div class="testimonial-author">Ronda Louis - Online Marketer</div>
-                                    </div>
-                                </div>
-
-
-                            </div>
-
-
-                            <div class="swiper-button-next"></div>
-                            <div class="swiper-button-prev"></div>
-
-
-                        </div>
-                    </div>
-
-
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-
-    <div class="form">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="text-container">
-                        <div class="above-heading">NEWSLETTER</div>
-                        <h2>Stay Updated With The Latest News To Get More Qualified Leads</h2>
-
-
-                        <form id="newsletterForm" data-toggle="validator" data-focus="false">
-                            <div class="form-group">
-                                <input type="email" class="form-control-input" id="nemail" required>
-                                <label class="label-control" for="nemail">Email</label>
-                                <div class="help-block with-errors"></div>
-                            </div>
-                            <div class="form-group checkbox">
-                                <input type="checkbox" id="nterms" value="Agreed-to-Terms" required>I've read and agree to Tivo's written <a href="privacy-policy.html">Privacy Policy</a> and <a href="terms-conditions.html">Terms Conditions</a>
-                                <div class="help-block with-errors"></div>
-                            </div>
-                            <div class="form-group">
-                                <button type="submit" class="form-control-submit-button">SUBSCRIBE</button>
-                            </div>
-                            <div class="form-message">
-                                <div id="nmsgSubmit" class="h3 text-center hidden"></div>
-                            </div>
-                        </form>
-
-
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="icon-container">
-                        <span class="fa-stack">
-                            <a href="#your-link">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-facebook-f fa-stack-1x"></i>
-                            </a>
-                        </span>
-                        <span class="fa-stack">
-                            <a href="#your-link">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-twitter fa-stack-1x"></i>
-                            </a>
-                        </span>
-                        <span class="fa-stack">
-                            <a href="#your-link">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-pinterest-p fa-stack-1x"></i>
-                            </a>
-                        </span>
-                        <span class="fa-stack">
-                            <a href="#your-link">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-instagram fa-stack-1x"></i>
-                            </a>
-                        </span>
-                        <span class="fa-stack">
-                            <a href="#your-link">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-linkedin-in fa-stack-1x"></i>
-                            </a>
-                        </span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-     -->
-
-
-
-    <svg class="footer-frame" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 1920 79"><defs><style>.cls-2{fill:#5f4def;}</style></defs><title>footer-frame</title><path class="cls-2" d="M0,72.427C143,12.138,255.5,4.577,328.644,7.943c147.721,6.8,183.881,60.242,320.83,53.737,143-6.793,167.826-68.128,293-60.9,109.095,6.3,115.68,54.364,225.251,57.319,113.58,3.064,138.8-47.711,251.189-41.8,104.012,5.474,109.713,50.4,197.369,46.572,89.549-3.91,124.375-52.563,227.622-50.155A338.646,338.646,0,0,1,1920,23.467V79.75H0V72.427Z" transform="translate(0 -0.188)"/></svg>
-    <div class="footer">
+    <!--Contact us-->
+    <div id="Contact" class="footer">
         <div class="container">
             <p style="text-align: center;">
                 <img src="https://seamly.net/wp-content/uploads/2018/08/Seamly_ICONS_converted_489-512x427.png" style="width: 50px; height: 50px;"><strong>Seamly Creative Design Software</strong><br>
                 <small>Post questions on the <a style="color: white;" href="http://forum.seamly.net/">Seamly Forum</a></small><br>
-                <small>or send email to&nbsp;</small><a style="color: white;" href="mailto:hello@seamly2d.com">&nbsp;hello@seamly.net</a></p>
-            <!-- <div class="row">
-                <div class="col-md-4">
-                    <div class="footer-col first">
-                        <h4>About Tivo</h4>
-                        <p class="p-small">We're passionate about designing and developing one of the best marketing apps in the market</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="footer-col middle">
-                        <h4>Important Links</h4>
-                        <ul class="list-unstyled li-space-lg p-small">
-                            <li class="media">
-                                <i class="fas fa-square"></i>
-                                <div class="media-body">Our business partners <a class="white" href="#your-link">startupguide.com</a></div>
-                            </li>
-                            <li class="media">
-                                <i class="fas fa-square"></i>
-                                <div class="media-body">Read our <a class="white" href="terms-conditions.html">Terms & Conditions</a>, <a class="white" href="privacy-policy.html">Privacy Policy</a></div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="footer-col last">
-                        <h4>Contact</h4>
-                        <ul class="list-unstyled li-space-lg p-small">
-                            <li class="media">
-                                <i class="fas fa-map-marker-alt"></i>
-                                <div class="media-body">22 Innovative, San Francisco, CA 94043, US</div>
-                            </li>
-                            <li class="media">
-                                <i class="fas fa-envelope"></i>
-                                <div class="media-body"><a class="white" href="mailto:contact@tivo.com">contact@tivo.com</a> <i class="fas fa-globe"></i><a class="white" href="#your-link">www.tivo.com</a></div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>  -->
+                <small>or send email to</small><a style="color: white;" href="mailto:hello@seamly2d.com">hello@seamly.net</a></p>
+
         </div>
     </div>
 
-
-
-
-    <div class="copyright">
+    <!--Copyright-->
+    <div class="copyright" id="Copyright">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -506,6 +292,8 @@
             </div>
         </div>
     </div>
+
+    <!--Signup-->
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
@@ -515,37 +303,35 @@
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
+            <!-- Begin Mailchimp Signup Form -->
             <div class="modal-body">
-              <!-- Begin Mailchimp Signup Form -->
                 <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
                 <style type="text/css">
 	            #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
                 </style>
                 <div id="mc_embed_signup">
                     <form action="https://valentina-project.us16.list-manage.com/subscribe/post?u=e2d538dec55df318e85d04e22&amp;id=6d1bcd0782" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                    <div id="mc_embed_signup_scroll">
-	                <input type="email" value="" name="EMAIL" class="email form-control-input form-control" id="mce-EMAIL" placeholder="email address" required>
-                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_e2d538dec55df318e85d04e22_6d1bcd0782" tabindex="-1" value=""></div>
-                    <br><br>
-                    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button btn btn-primary" style="float: right;"></div>
+                      <div id="mc_embed_signup_scroll">
+	                      <input type="email" value="" name="EMAIL" class="email form-control-input form-control" id="mce-EMAIL" placeholder="email address" required>
+                        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_e2d538dec55df318e85d04e22_6d1bcd0782" tabindex="-1" value=""></div>
+                        <br><br>
+                        <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button btn btn-primary" style="float: right;"></div>
+                      </div>
+                    </form>
                 </div>
-                </form>
-                </div>
-            </div>
-            <!-- <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
-            </div> -->
+            </div><!--end form-->
           </div>
         </div>
-      </div>
+    </div> <!--end Signup-->
+
+    <!--downloads-->
     <div style="display: none;">
-      <button id="popupmodal" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"></button>
-      <a id="windowsoszip" href="" download></a>
-      <a id="macoszip1" href="" download></a>
-      <a id="macoszip2" href="" download></a>
-      <a id="linuxos" href=""></a>
-    </div>
+        <button id="popupmodal" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"></button>
+        <a id="windowsoszip" href="" download></a>
+        <a id="macoszip1" href="" download></a>
+        <a id="macoszip2" href="" download></a>
+        <a id="linuxos" href=""></a>
+    </div> <!--end download-->
 
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
@@ -555,73 +341,87 @@
     <script src="js/jquery.magnific-popup.js"></script>
     <script src="js/validator.min.js"></script>
     <script src="js/scripts.js"></script>
+
+    <!--define the map-->
     <script>
+      // Initialize and add the map
+      function initMap() {
+        // The location of Uluru
+        var uluru = {lat: -25.344, lng: 131.036};
+        // The map, centered at Uluru
+        var map = new google.maps.Map(
+          document.getElementById('map'), {zoom: 4, center: uluru});
+          // The marker, positioned at Uluru
+          var marker = new google.maps.Marker({position: uluru, map: map});
+        }
+    </script>
+    <!--Load the API from the specified URL
+    * The async attribute allows the browser to render the page while the API loads
+    * The key parameter will contain your own API key (which is not needed for this tutorial)
+    * The callback parameter executes the initMap() function
+    -->
+    <script defer
+    src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+    </script>
+    <!--end define the map-->
 
-    $(document).ready(
+    <!--define Download ids-->
+    <script>
+      $(document).ready(
         function(){
-            $.get('https://api.github.com/repos/fashionfreedom/seamly2d/releases/latest',function(temp1){temp1.assets.forEach(function(e){
+            $.get('https://api.github.com/repos/fashionfreedom/seamly2d/releases/latest',function(temp1)
+              {temp1.assets.forEach(function(e){
 
-                if(e.name == 'seamly2d-installer.exe')
-                {
-                $("#windowsoszip").attr("href", e.browser_download_url)
-                }
-                else if(e.name == 'Seamly2D.dmg')
-                {
-                $("#macoszip1").attr("href", e.browser_download_url)
-                }
-                else if(e.name == 'SeamlyME.dmg')
-                {
-                $("#macoszip2").attr("href", e.browser_download_url)
-                }
-                else if(e.name == 'Seamly2D.AppImage')
-                {
-                $("#linuxos").attr("href", e.browser_download_url)
-                }
-
-                });},'JSON');
-        }
-    )
+                  if(e.name == 'seamly2d-installer.exe'){
+                    $("#windowsoszip").attr("href", e.browser_download_url)
+                  }
+                  else if(e.name == 'Seamly2D.dmg'){
+                    $("#macoszip1").attr("href", e.browser_download_url)
+                  }
+                  else if(e.name == 'SeamlyME.dmg'){
+                    $("#macoszip2").attr("href", e.browser_download_url)
+                  }
+                  else if(e.name == 'Seamly2D.AppImage'){
+                    $("#linuxos").attr("href", e.browser_download_url)
+                  }
+              });},'JSON');
+        })
         var currentos = '';
-        var openpopup = function(os)
-        {
-            currentos = os;
-            $('#popupmodal').trigger('click');
+        var openpopup = function(os){
+          currentos = os;
+          $('#popupmodal').trigger('click');
         }
-
-    $('#mc-embedded-subscribe').on('click',function(e){
-        var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
-        if (reg.test($('#mce-EMAIL').val()) == false)
-        {
+        $('#mc-embedded-subscribe').on('click',function(e){
+          var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+          if (reg.test($('#mce-EMAIL').val()) == false){
             alert('Invalid Email Address');
             return false;
-        }
-        else{
-            if(currentos == 'windows')
-            {
-            setTimeout(function () {
+          }
+          else{
+            if(currentos == 'windows'){
+              setTimeout(function () {
                 $('#windowsoszip')[0].click();
-            }, 3000);
+              }, 3000);
             }
-            else if(currentos == 'mac')
-            {
-            setTimeout(function () {
+            else if(currentos == 'mac'){
+              setTimeout(function () {
                 $('#macoszip1')[0].click();
-            }, 3000);
-            setTimeout(function () {
+              }, 3000);
+              setTimeout(function () {
                 $('#macoszip2')[0].click();
-            }, 6000);
+              }, 6000);
             }
-            else if(currentos == 'linux')
-            {
-            setTimeout(function () {
+            else if(currentos == 'linux'){
+              setTimeout(function () {
                 $('#linuxos')[0].click()
-            }, 3000);
-
+              }, 3000);
             }
             currentos = '';
+          }
+          $('#popupmodal').trigger('click');
         }
-        $('#popupmodal').trigger('click');
-        });
-    </script>
-</body>
+      );
+    </script> <!--end script Download ids-->
+
+  </body>
 </html>
